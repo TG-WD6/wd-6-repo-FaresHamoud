@@ -99,10 +99,9 @@ Schrijf onderaan je CSS bestand een media query voor een maximale breedte van 48
 
 Als het scherm minder dan 480px breed is, geeft je de .page-title class een breedte van 270px. Hierdoor wordt het page-title element duidelijker weergegeven op kleine schermen. Test je code door het formaat van de browser aan te passen in element inspection. */
 
-@media (width: < 480px)
+@media (max-width: 480px)
 {
     .page-title {
-        width: 270px;
-}
+        width: 270px;}
 }
 

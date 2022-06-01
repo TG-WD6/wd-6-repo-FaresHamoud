@@ -95,15 +95,16 @@ nav a {
 }
 
 
-/* 
-Opdracht 2
-Laten we de gallery afbeeldingen groter laten lijken als de schermgrootte klein tot middelgroot is. Schrijf een media query voor schermformaten met een bereik tussen 320px en 480px. Gebruik min-breedte en max-breedte om het bereik te definiëren.
-
-Selecteer in de media query de thumbnails van de gallery met .gallery-item .thumbnail en geef ze een breedte van 95%. Als het goed is zul je zien dat de gallery afbeeldingen breder lijken wanneer de schermgrootte tussen 320 en 480 pixels breed is. */
 
 
 
-@media (min-width: 320px)  (max-width: 480px){    
-  .gallery-item .thumbnail {width: 95%;}
+/* Opdracht 5
+Ga nog eens terug naar de eerste media query waarin je je richtte op schermen met een minimale breedte van 320 px en een maximale breedte van 480 px. Laten we ook het logo en de tekst verticaal verschijnen als het scherm in ‘portrait’ oriëntatie staat.
+
+Voeg nog een mediafunctie toe aan de regel door een komma te gebruiken om regels te scheiden. De tweede mediafunctie moet controleren of de oriëntatie van het scherm daadwerkelijk ‘portrait’ is. */
+
+
+@media (min-width: 320px), (max-width: 480px) and (orientation: portrait) {
+  .page-description { display: inline;}
+
 }
-

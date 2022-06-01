@@ -94,16 +94,14 @@ nav a {
   bottom: 2px;
 }
 
+@media (min-width: 768px, max-width: 1024px, orientation: landscape)
 
-/* 
-Opdracht 2
-Laten we de gallery afbeeldingen groter laten lijken als de schermgrootte klein tot middelgroot is. Schrijf een media query voor schermformaten met een bereik tussen 320px en 480px. Gebruik min-breedte en max-breedte om het bereik te definiëren.
+/* Opdracht 6
+De laatste breakpoint waar we rekening mee willen houden is een tablet in liggende stand (landscape). De Amazing Space website zou het formaat moeten veranderen om de gallery afbeeldingen aan de rechterkant weer te geven, terwijl het logo en de beschrijving aan de linkerkant staan. Schrijf een media query die aan de volgende vereisten voldoet:
 
-Selecteer in de media query de thumbnails van de gallery met .gallery-item .thumbnail en geef ze een breedte van 95%. Als het goed is zul je zien dat de gallery afbeeldingen breder lijken wanneer de schermgrootte tussen 320 en 480 pixels breed is. */
+Het scherm heeft een minimale breedte van 768px;
+Het scherm heeft een maximale breedte van 1024px;
+Het scherm heeft als oriëntatie ‘landscape’.
+Deze query zorgt ervoor dat de paginatitel en beschrijving links van de gallery afbeeldingen komen te zweven. Pas het formaat van de browser aan om deze veranderingen op verschillende schermbreedtes te observeren. */
 
-
-
-@media (min-width: 320px)  (max-width: 480px){    
-  .gallery-item .thumbnail {width: 95%;}
-}
 

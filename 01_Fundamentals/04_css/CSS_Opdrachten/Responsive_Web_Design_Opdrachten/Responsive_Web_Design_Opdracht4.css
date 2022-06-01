@@ -95,15 +95,15 @@ nav a {
 }
 
 
-/* 
-Opdracht 2
-Laten we de gallery afbeeldingen groter laten lijken als de schermgrootte klein tot middelgroot is. Schrijf een media query voor schermformaten met een bereik tussen 320px en 480px. Gebruik min-breedte en max-breedte om het bereik te definiëren.
-
-Selecteer in de media query de thumbnails van de gallery met .gallery-item .thumbnail en geef ze een breedte van 95%. Als het goed is zul je zien dat de gallery afbeeldingen breder lijken wanneer de schermgrootte tussen 320 en 480 pixels breed is. */
 
 
 
-@media (min-width: 320px)  (max-width: 480px){    
-  .gallery-item .thumbnail {width: 95%;}
+
+/* pdracht 4
+De tekst van de website moet groter zijn voor gebruikers met kleine schermen met een lage resolutie. Schrijf een media query die van toepassing is wanneer de maximale resolutie 150 dpi is en het scherm een ​​maximale breedte heeft van 480px.
+
+Maak binnen de media query de font-size van het page-description element 20px. */
+
+@media (max-resolution = 150dpi) and (max-width: 480px) {
+.page-description  {font-size: 20px;}
 }
-
