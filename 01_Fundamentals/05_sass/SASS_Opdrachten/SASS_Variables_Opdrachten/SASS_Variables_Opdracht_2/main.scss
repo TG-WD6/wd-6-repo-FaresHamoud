@@ -1,4 +1,11 @@
 @import url(https://fonts.googleapis.com/css?family=Pacifico);
+
+$translucent-white: rgba(255,255,255,0.3);
+
+
+$icon-square-length: 300px;
+
+
 h1 {
     font-family: Roboto, sans-serif;
     text-align: center;
@@ -13,4 +20,15 @@ h1 {
 .container {
     text-align: center;
     font-family: "Pacifico", cursive;
+}
+
+.slogan {
+    background: $translucent-white;
+
+}
+
+
+.icon {
+    width: $icon-square-length;
+    height: $icon-square-length;
 }
