@@ -1,9 +1,0 @@
-{
-    "version": 3,
-    "mappings": "AAAA,OAAO,CAAC,qDAAI;AAGZ,AAAA,kBAAkB;AAGlB,EAAE,CAAC;EACC,WAAW,EAAE,kBAAkB;EAC/B,UAAU,EAAE,MAAM;CACrB;;AAED,AAAA,OAAO,CAAC;EACJ,WAAW,EAAE,mBAAmB;EAChC,MAAM,EAAE,KAAK;EACb,gBAAgB,EAAE,mBAAmB;CACxC;;AAED,AAAA,UAAU,CAAC;EACP,UAAU,EAAE,MAAM;EAClB,WAAW,EAAE,mBAAmB;CACnC;;AAED,AAAA,OAAO,CAAC;EACJ,UAAU,EArBM,wBAAqB;CAuBxC",
-    "sources": [
-        "../../01_Fundamentals/05_sass/SASS_Opdrachten/SASS_Variables_Opdrachten/SASS_Variables_Opdracht_1/main.scss"
-    ],
-    "names": [],
-    "file": "main.css"
-}

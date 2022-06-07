@@ -1,0 +1,23 @@
+@import '_colors.scss';
+
+
+.button {
+
+
+    &:hover {
+        background: $button-hover-color;
+        box-shadow: 2px 2px 2px 2px grey;
+    }
+
+    
+
+background: $button-color;
+width: 100px;
+height: 30px;
+position: absolute;}
+
+.buttontext {
+    position: relative;
+    bottom: 10px;
+    left: 24px;
+}

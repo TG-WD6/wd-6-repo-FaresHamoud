@@ -1,0 +1,38 @@
+@mixin buttonStyle {
+    
+    background-color: rgb(228, 180, 107);
+    color: rgb(41, 41, 41);
+    border-radius: 6%;
+    border-style: none;
+&:hover {
+    background-color: rgb(237, 88, 75);
+    color: rgb(255, 253, 253);
+}   
+}
+
+
+
+// opdracht1 
+.button {
+    @include buttonStyle()
+
+}
+
+
+// opdracht2 
+
+@mixin colorchange {
+    background: purple;
+    transition: all 2s ease-out;
+    
+
+.colorChangingSquare {
+    width: 50px;
+    height: 50px;
+    position: relative;
+    background: rgb(68, 112, 195);
+    margin: 10px;
+
+    &:hover {
+        @include colorchange()
+    }

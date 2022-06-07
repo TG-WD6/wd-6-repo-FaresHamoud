@@ -1,0 +1,38 @@
+@import url(https://fonts.googleapis.com/css?family=Pacifico);
+h1 {
+    font-family: Roboto, sans-serif;
+    text-align: center;
+}
+
+.banner {
+    font-family: "Pacifico", cursive;
+    height: 400px;
+    background-image: url("lemonade.jpg");
+// opdracht 1
+    .slogan {
+        position: absolute;
+        border: 4px solid rgb(0, 0, 0);
+        top: 200px;
+        left: 25%;
+        width: 50%;
+        height: 200px;
+        text-align: center;
+// opdracht2
+        .span {
+            font-size: 24px;
+            line-height: 200px; 
+        }
+    }
+}
+
+.container {
+    text-align: center;
+    font-family: "Pacifico", cursive;
+    // Opdracht3
+    .icon {
+        display: inline-block;
+        margin: 2%;
+        border: 4px solid black;
+        font-size: 32px;
+    }
+}

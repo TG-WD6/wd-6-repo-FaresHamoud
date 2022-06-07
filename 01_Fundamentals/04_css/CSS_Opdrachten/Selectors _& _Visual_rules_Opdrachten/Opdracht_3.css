@@ -1,0 +1,29 @@
+
+   
+   
+   /* this is a type selector, select a type of element such as p or li or h1 ...etc good for general edits in a page */
+   p {
+       color:rgb(93, 48, 125)
+   }
+   
+   
+   /* this is an id selector, select a specific id, it is good for unique elements you want to change but not as a general rule, to many ids are not efficient practice */
+   #li2 {
+       font-style: oblique;
+   }
+   
+   
+   /* this is a class selector, classes are more general than ids, suitable to select multiple elements at once, they are less specific than id but more specific than type selectors */
+   .aDiv {
+       color: brown;
+   }
+   
+   
+   
+   /* this is a descendant selector, so applies style to selcted element only if they are descendant of another one specified, 
+here we apply style to p only if it was nested under section */
+
+/* also this selector has priority cause it came before the type selector p under it */
+section p {
+    color: coral;
+   }
