@@ -10,6 +10,12 @@
 }
 
 
+@mixin AddToCartButton {
+    background: yellow;
+    width: 3em;
+    padding-left: 0.8em;
+}
+
 .ProductCards {
     width: 98%;
     display: flex;
@@ -42,5 +48,12 @@
 
 .ProductItem_ProductOrder {
     
+
+}
+
+
+
+.ProductOrder_AddToCartButton {
+    @include AddToCartButton;
 
 }

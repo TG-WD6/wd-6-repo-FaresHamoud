@@ -6,8 +6,24 @@
     background: $FooterBackgroundColor;
 justify-content: space-between;
     display: flex;
+    flex-direction:row;
     margin: 2em;
+    max-height: 600px;
     max-width: 80vw;
     padding: 1rem
  
+}
+
+
+.columnTitle {
+    margin-left: 2.5em;
+}
+
+.ListColumn {
+    display: inline-block;
+    position: relative;
+    padding: 1em;
+    ul li {
+        list-style: none;
+    }
 }

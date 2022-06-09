@@ -23,8 +23,8 @@
     align-items: center;
 }
 
-.LogInWindow_BlankImageLogIn {
-    @include BlankImage;
+.LogInWindow_BlankImage {
+    @include BlankImageLogIn;
 }
 
 
