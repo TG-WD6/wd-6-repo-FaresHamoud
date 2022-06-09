@@ -1,0 +1,42 @@
+
+@mixin BlankImage {
+    background: rgb(185, 184, 184);
+    width: 150px;
+    height: 150px;
+    border-radius: 10%;
+    position: relative;
+    display: inline-block;
+    
+}
+
+
+
+.LogInWindow_BlankImage {
+    @include BlankImage;
+}
+
+.Forms {
+    width: 90%;
+    border-top: 0;
+    border-left: 0;
+    border-right: 0;
+}
+
+
+
+#ForgotPassword {
+position: relative;
+left: 7em;
+}
+
+
+
+
+
+.LogInButton {
+    width: 90%;
+    background: $ButtonColor;
+    border-style: none;
+    color: $WhiteTextColor;
+    padding: 1em;
+}
