@@ -5,51 +5,68 @@
     height: 4em;
     background: $NavigationBarcolor;
     color: $WhiteTextColor;
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
    
 }
 
 
 @mixin NavBar_logo {
-    display: inline-block;
-    position: absolute;
-    width: auto;
-    float: left;
-img {
-    width: auto;
-    height: 100%;
-}
-    
-}
-
-
-@mixin NavBarMenu {
+    display: flex;
     position: relative;
-    float:right
+    width: auto;
+    float: left;   
+}
+
+
+@mixin NavBar_Menu {
+    position: relative;
     list-style: none;
-    justify-content: space-evenly;
-    display: inline;
-    flex-direction: row;
+    justify-content: space-between;
+    display: flex;
     padding: 1em;
-    font-size: $NavBarTextSize;
-    
+    font-size: $NavBarTextSize;}
+
+
+
+
+.NavBar {
+    position: relative;
+    display: flex;
+    height: 5em;
+    width: 100%;
+    align-items: center;
+    justify-content: space-around;
+    background-color: $NavigationBarcolor;
+
+}
+
+
+.NavBar_logo {
+    position: relative;
+    display: block;
+    height: 4em;
+position: static;
+
 }
 
 
 
+.NavBar_Menu {
+    display: block;
+    position: static;
 
-.NavBar{
-    @include NavBar;
-    }
-    
-    
-    .NavBar_logo {
-        @include NavBar_logo;
-    }
 
-    .NavBarMenu {
-        @include NavBarMenu;
+}
+
+.NavBar_Menu ul  {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    color: $WhiteTextColor;
+    li {
+        margin-right: 2em;
     }
-    
-    .NavBar_Menu li {
-        @include NavBarMenu;
-    }
+}

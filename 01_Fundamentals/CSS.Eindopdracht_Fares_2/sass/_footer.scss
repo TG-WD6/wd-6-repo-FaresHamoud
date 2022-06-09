@@ -4,8 +4,10 @@
 
 .Footer {
     background: $FooterBackgroundColor;
-    width: 85%;
-    position: absolute;
-    display: block;
+justify-content: space-between;
+    display: flex;
     margin: 2em;
+    max-width: 80vw;
+    padding: 1rem
+ 
 }

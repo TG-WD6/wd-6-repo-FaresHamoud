@@ -19,6 +19,34 @@
   width: 60%;
 }
 
+.LogInWindow {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  max-width: 500px;
+  min-width: 350px;
+}
+
+.LogInWindow_BlankImageAndCaption {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
 .LogInWindow_BlankImage {
   background: #b9b8b8;
   width: 150px;
@@ -28,16 +56,15 @@
   display: inline-block;
 }
 
+.LogInWindow_Forms {
+  margin-top: 3em;
+}
+
 .Forms {
   width: 90%;
   border-top: 0;
   border-left: 0;
   border-right: 0;
-}
-
-#ForgotPassword {
-  position: relative;
-  left: 7em;
 }
 
 .LogInButton {
@@ -49,65 +76,87 @@
 }
 
 .NavBar {
-  padding: 10px;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 5em;
   width: 100%;
-  height: 4em;
-  background: #4a338e;
-  color: white;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  background-color: #4a338e;
 }
 
 .NavBar_logo {
-  display: inline-block;
-  position: absolute;
-  width: auto;
-  float: left;
-}
-
-.NavBar_logo img {
-  width: auto;
-  height: 100%;
-}
-
-.NavBarMenu {
   position: relative;
-  list-style: none;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
-  display: inline;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  padding: 1em;
-  font-size: 1.6em;
+  display: block;
+  height: 4em;
+  position: static;
 }
 
-.NavBar_Menu li {
-  position: relative;
+.NavBar_Menu {
+  display: block;
+  position: static;
+}
+
+.NavBar_Menu ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   list-style: none;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
-  display: inline;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  padding: 1em;
-  font-size: 1.6em;
+  color: white;
+}
+
+.NavBar_Menu ul li {
+  margin-right: 2em;
 }
 
 .ProductCards {
   width: 98%;
-  display: contents;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  max-width: 600px;
+  min-width: 350px;
+}
+
+.ProductCards_productItem {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 150px;
+  width: 70vw;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .Footer {
   background: #f3f1e8;
-  width: 85%;
-  position: absolute;
-  display: block;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   margin: 2em;
+  max-width: 80vw;
+  padding: 0,2em;
 }
 /*# sourceMappingURL=main.css.map */

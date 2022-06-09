@@ -1,5 +1,5 @@
 
-@mixin BlankImage {
+@mixin BlankImageLogIn {
     background: rgb(185, 184, 184);
     width: 150px;
     height: 150px;
@@ -9,10 +9,27 @@
     
 }
 
+.LogInWindow {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 500px;
+    min-width: 350px;
+}
 
+.LogInWindow_BlankImageAndCaption {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 
-.LogInWindow_BlankImage {
+.LogInWindow_BlankImageLogIn {
     @include BlankImage;
+}
+
+
+.LogInWindow_Forms{
+margin-top: 3em;
 }
 
 .Forms {
@@ -25,8 +42,7 @@
 
 
 #ForgotPassword {
-position: relative;
-left: 7em;
+
 }
 
 

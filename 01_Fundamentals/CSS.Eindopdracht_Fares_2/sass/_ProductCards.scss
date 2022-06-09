@@ -1,4 +1,46 @@
+
+@mixin BlankImageProduct {
+    background: rgb(185, 184, 184);
+    width: 150px;
+    height: 150px;
+    border-radius: 10%;
+    position: relative;
+    display: inline-block;
+    
+}
+
+
 .ProductCards {
     width: 98%;
-    display: contents;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 600px;
+    min-width: 350px;
+}
+
+
+
+
+
+.ProductCards_productItem {
+    display: flex;
+    height: 150px;
+    width: 70vw;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+
+.ProductItem_ProductImage {
+
+@include BlankImageProduct;
+}
+
+
+
+.ProductItem_ProductOrder {
+    
+
 }
