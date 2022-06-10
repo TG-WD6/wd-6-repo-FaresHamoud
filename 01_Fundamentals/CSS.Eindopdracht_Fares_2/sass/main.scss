@@ -1,13 +1,37 @@
 @import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css);
-@import 'base','layout','LogInWindow','NavBar','ProductCards','footer';
+@import 'base','layout','NavBar','LogInWindow','ProductCards','footer';
+
+
+
+.PageMainFrame {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
 
 
 
 
 
+@media (min-width: 0) and (max-width: 600px)
+{
+
+    .NavBar_Menu ul {
+        @include NavBar_MenuMobileView;
+    }
 
 
 
+.ProductCards {
+    @include ProductCardsMobileView;
+}
+
+
+
+.Footer {
+        @include FooterMobileView;
+    }
+}
+
+ 
 
 
 

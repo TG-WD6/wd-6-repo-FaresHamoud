@@ -1,11 +1,11 @@
 
 @mixin BlankImageProduct {
     background: rgb(185, 184, 184);
-    width: 150px;
-    height: 150px;
+    width: 120px;
+    height: 120px;
     border-radius: 10%;
     position: relative;
-    display: inline-block;
+    display: block;
     
 }
 
@@ -13,16 +13,26 @@
 @mixin AddToCartButton {
     background: yellow;
     width: 3em;
-    padding-left: 0.8em;
+    height: 1.5em;
+    padding-left: 0.9em;
+    padding-top: 0.5em;
+}
+
+@mixin ProductCards_productItem {
+    display: flex;
+    min-height: 150px;
+    max-width: 95%;
+    justify-content: space-between;
+    align-items: center;
+    
 }
 
 .ProductCards {
-    width: 98%;
+    width: 90vw;
     display: flex;
     flex-direction: column;
-    align-items: center;
-    max-width: 600px;
-    min-width: 350px;
+    align-items: left;
+
 }
 
 
@@ -30,13 +40,18 @@
 
 
 .ProductCards_productItem {
-    display: flex;
-    height: 150px;
-    width: 70vw;
-    justify-content: space-between;
-    align-items: center;
+@include ProductCards_productItem;
 
 }
+
+.ProductItem_ProductDescription {
+    display: inline-block;
+    max-width: 60%;
+    padding-left: 0.5em;
+    padding-right: 1em;
+
+}
+
 
 
 .ProductItem_ProductImage {
@@ -47,11 +62,35 @@
 
 
 .ProductItem_ProductOrder {
+    min-width: 14em;
+    display:block;
+
     
 
 }
 
+.ProductOrder_price {
+    color: $PriceTextColor;
+    position: relative;
+    display: block;
+    .cents {
+        font-size: 76%;
+        position: relative;
+        top: -4px;
+        right: 2px
+    }
+  
+}
 
+
+
+
+
+
+.ProductOrder_DeliveryTime {
+
+    color: $OrderTextColor;
+}
 
 .ProductOrder_AddToCartButton {
     @include AddToCartButton;
