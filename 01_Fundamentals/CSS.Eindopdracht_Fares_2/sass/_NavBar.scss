@@ -7,6 +7,7 @@
     color: $WhiteTextColor;
     position: relative;
     display: flex;
+    flex-direction: row;
     justify-content: space-around;
     align-items: center;
    
@@ -14,16 +15,21 @@
 
 
 @mixin NavBar_logo {
-    display: flex;
+    display: inline-block;
     position: relative;
-    width: auto;
-    float: left;   
+    float: left;  
+    width: 2em; 
+    
+    &img {
+        width: 1em;
+        height: 1em;
+
+    }
 }
 
 
 @mixin NavBar_Menu {
     position: relative;
-    list-style: none;
     justify-content: space-between;
     display: flex;
     padding: 1em;
@@ -33,40 +39,35 @@
 
 
 .NavBar {
-    position: relative;
-    display: flex;
-    height: 5em;
-    width: 100%;
-    align-items: center;
-    justify-content: space-around;
-    background-color: $NavigationBarcolor;
+@include NavBar;
 
 }
 
 
 .NavBar_logo {
-    position: relative;
-    display: block;
-    height: 4em;
-position: static;
+@include NavBar_logo;
 
 }
 
 
 
 .NavBar_Menu {
-    display: block;
-    position: static;
+@include NavBar_Menu;}
 
-
-}
-
-.NavBar_Menu ul  {
-    display: flex;
+.NavBar_manu ul {
     justify-content: space-between;
     list-style: none;
     color: $WhiteTextColor;
-    li {
-        margin-right: 2em;
-    }
+    li {margin-right: 2em;}
 }
+
+
+    
+
+
+
+@mixin NavBar_MenuMobileView 
+{
+    display: flex;
+    flex-direction: column;
+    height: auto;}

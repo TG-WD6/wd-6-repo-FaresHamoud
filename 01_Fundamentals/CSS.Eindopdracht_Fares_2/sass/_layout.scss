@@ -2,46 +2,21 @@
     margin: 0;
     padding: 0;
     max-width: 100vw;
-}
-
-
-
-
-
-.NavBar {
-    display: flex;
-    flex-direction: row;
-    
-}
-
-
-
-
-
-// @mixin NavBarMobileView {
-//     display: flex;
-//     flex-direction: column;
-//     height: auto;
-    
-// }
-
-@mixin NavBar_MenuMobileView {
     display: flex;
     flex-direction: column;
-    height: auto;
-    
-
-
-
-    @mixin ProductCardsMobileView {
-
-        display: flex;
-        flex-direction: column;
-       
-    }
+    justify-content: center;
 }
+
 @mixin FooterMobileView {
     display: flex;
     flex-direction: column;
     
+}
+
+
+@mixin ProductCardsMobileView {
+
+    display: flex;
+    flex-direction: column;
+   
 }

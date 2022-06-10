@@ -3,9 +3,25 @@
   margin: 0;
   padding: 0;
   max-width: 100vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .NavBar {
+  padding: 10px;
+  width: 100%;
+  height: 4em;
+  background: #4a338e;
+  color: white;
+  position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -13,6 +29,47 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.NavBar_logo {
+  display: inline-block;
+  position: relative;
+  float: left;
+  width: 2em;
+}
+
+.NavBar_logoimg {
+  width: 1em;
+  height: 1em;
+}
+
+.NavBar_Menu {
+  position: relative;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 1em;
+  font-size: 1.6em;
+}
+
+.NavBar_manu ul {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  list-style: none;
+  color: white;
+}
+
+.NavBar_manu ul li {
+  margin-right: 2em;
 }
 
 .LogInWindow {
@@ -26,8 +83,7 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  max-width: 500px;
-  min-width: 350px;
+  max-width: 300px;
   margin-top: 4em;
   margin-bottom: 2em;
 }
@@ -59,60 +115,22 @@
 }
 
 .Forms {
-  width: 90%;
+  width: 80%;
   border-top: 0;
   border-left: 0;
   border-right: 0;
 }
 
+.ForgotPassword {
+  font-size: 60%;
+}
+
 .LogInButton {
-  width: 90%;
+  width: 12em;
   background: #3871d3;
   border-style: none;
   color: white;
   padding: 1em;
-}
-
-.NavBar {
-  position: relative;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  height: 5em;
-  width: 100%;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  background-color: #4a338e;
-}
-
-.NavBar_logo {
-  position: relative;
-  display: block;
-  height: 4em;
-  position: static;
-}
-
-.NavBar_Menu {
-  display: block;
-  position: static;
-}
-
-.NavBar_Menu ul {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  list-style: none;
-  color: white;
-}
-
-.NavBar_Menu ul li {
-  margin-right: 2em;
 }
 
 .ProductCards {
@@ -232,8 +250,8 @@
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-@media only screen and (max-width: 612px) {
-  .NavBar {
+@media (min-width: 0) and (max-width: 590px) {
+  .NavBar_Menu ul {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -243,7 +261,7 @@
             flex-direction: column;
     height: auto;
   }
-  .NavBar_Menu {
+  .ProductCards {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -251,7 +269,6 @@
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    height: auto;
   }
   .Footer {
     display: -webkit-box;
