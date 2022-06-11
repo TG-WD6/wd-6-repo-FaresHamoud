@@ -4,36 +4,44 @@
 
 .Footer {
     background: $FooterBackgroundColor;
-justify-content: space-between;
-    display: flex;
-    flex-direction:row;
-    margin: 2em;
+    margin: 1rem;
     max-width: 80vw;
     padding: 1rem
  
 }
 
+.Footer_ListColumns {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+
+}
 
 .columnTitle {
-    margin-left: 2.5em;
+    font-weight: bold;
+    padding-left: 2.3em;
 }
 
 .ListColumn {
     display: inline-block;
     position: relative;
     padding: 1em;
+
     ul li {
         list-style: none;
-    }
+}
 }
 
+.Footer_FollowOnSocials {
+display: inline-block;
+float: right;
+}
 
 
 .FollowOnSocials_followText {
     font-weight: bold;
 }
 
-
-.FollowOnSocials_SocialsIcons {
-    color: $ButtonColor;
-}
+.FollowOnSocials_SocialsIcons 
+{
+    color: $ButtonColor;}

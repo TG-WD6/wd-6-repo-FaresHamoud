@@ -7,33 +7,6 @@
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-
-
-
-
-@media (min-width: 0) and (max-width: 590px)
-{
-
-    .NavBar_Menu ul {
-        @include NavBar_MenuMobileView;
-    }
-
-
-
-.ProductCards {
-    @include ProductCardsMobileView;
-}
-
-
-
-.Footer {
-        @include FooterMobileView;
-    }
-
-
-    
-}
-
  
 
 
