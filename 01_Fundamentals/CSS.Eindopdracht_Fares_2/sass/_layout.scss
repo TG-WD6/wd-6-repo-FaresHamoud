@@ -7,12 +7,6 @@
 //     justify-content: center;
 // }
 
-@mixin FooterMobileView {
-    display: flex;
-    flex-direction: column;
-    
-}
-
 
 @mixin ProductCardsMobileView {
 
@@ -20,3 +14,45 @@
     flex-direction: column;
    
 }
+
+@mixin ProductCards_productItem {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 4em;
+    
+    
+}
+
+
+
+@mixin FooterMobileView {
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    
+}
+
+
+
+
+
+
+
+
+@media only screen and (max-width: 750px) {
+    
+
+    .ProductCards {
+        @include ProductCardsMobileView;
+
+    }
+    .ProductCards_productItem {
+        @include ProductCards_productItem;
+    }
+    
+    .Footer_ListColumns{
+        @include FooterMobileView()
+    }   
+
+  }

@@ -161,8 +161,16 @@
   margin: 1em;
 }
 
+.ProductItem_ProductDescription .ProductDescription_TechgroundsTitel {
+  font-weight: bold;
+}
+
+.ProductItem_ProductDescription .ProductDescription_Lorumipsum {
+  color: #545454;
+}
+
 .ProductItem_ProductOrder {
-  min-width: 14em;
+  min-width: 16em;
   display: block;
   position: relative;
   margin-top: 2em;
@@ -174,10 +182,10 @@
   display: block;
 }
 
-.ProductOrder_price .cents {
+.cents {
   font-size: 76%;
   position: relative;
-  top: -4px;
+  top: -5px;
   right: 2px;
 }
 
@@ -186,7 +194,7 @@
 }
 
 .ProductOrder_AddToCartButton {
-  background: yellow;
+  background: #f6f626;
   width: 3em;
   height: 1.5em;
   border-style: none;
@@ -221,6 +229,7 @@
   display: inline-block;
   position: relative;
   padding: 1em;
+  width: 8em;
 }
 
 .ListColumn ul li {
@@ -228,8 +237,9 @@
 }
 
 .Footer_FollowOnSocials {
+  position: relative;
   display: inline-block;
-  float: right;
+  margin-left: auto;
 }
 
 .FollowOnSocials_followText {
@@ -238,6 +248,43 @@
 
 .FollowOnSocials_SocialsIcons {
   color: #3871d3;
+}
+
+@media only screen and (max-width: 750px) {
+  .ProductCards {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .ProductCards_productItem {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    gap: 4em;
+  }
+  .Footer_ListColumns {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
 }
 
 .PageMainFrame {

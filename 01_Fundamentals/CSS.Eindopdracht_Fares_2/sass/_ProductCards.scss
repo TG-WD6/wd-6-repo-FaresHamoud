@@ -23,7 +23,7 @@
 
 
 @mixin ProductOrder_AddToCartButton {
-    background: yellow;
+    background: rgb(246, 246, 38);
     width: 3em;
     height: 1.5em;
     border-style: none;
@@ -78,8 +78,18 @@
 
 
 
+.ProductItem_ProductDescription {
+    .ProductDescription_TechgroundsTitel {
+        font-weight: bold;
+    }
+    .ProductDescription_Lorumipsum {
+        color: $GreyTextColor;
+    }
+}
+
+
 .ProductItem_ProductOrder {
-    min-width: 14em;
+    min-width: 16em;
     display:block;
     position: relative;
     margin-top: 2em;
@@ -92,13 +102,15 @@
     color: $PriceTextColor;
     position: relative;
     display: block;
-    .cents {
-        font-size: 76%;
-        position: relative;
-        top: -4px;
-        right: 2px
-    }
+
   
+}
+
+.cents {
+    font-size: 76%;
+    position: relative;
+    top: -5px;
+    right: 2px
 }
 
 
