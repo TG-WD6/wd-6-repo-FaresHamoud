@@ -8,21 +8,35 @@
 // }
 
 
+@mixin LogInWindowMobileView {
+    display: flex;
+    justify-self: center;
+    
+}
+
 @mixin ProductCardsMobileView {
 
     display: flex;
     flex-direction: column;
+    align-items: center;
    
 }
 
-@mixin ProductCards_productItem {
+@mixin ProductCards_productItemMobileView {
+    display: block;
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 4em;
+    gap: 1em;
+    margin-top: 2em;
     
     
 }
+
+
+
+
+
 
 
 
@@ -41,6 +55,53 @@
 
 
 @media only screen and (max-width: 750px) {
+
+
+    // .menu-button-container {
+    //     display: flex;
+    //   }
+    //   .NavBar_List {
+    //     position: absolute;
+    //     top: 0;
+    //     margin-top: 50px;
+    //     left: 0;
+    //     flex-direction: column;
+    //     width: 100%;
+    //     justify-content: center;
+    //     align-items: center;
+    //   }
+    //   #menu-toggle ~ .NavBar_List li {
+    //     height: 0;
+    //     margin: 0;
+    //     padding: 0;
+    //     border: 0;
+    //     transition: height 400ms cubic-bezier(0.23, 1, 0.32, 1);
+    //   }
+    //   #menu-toggle:checked ~ .NavBar_List li {
+    //     border: 1px solid #333;
+    //     height: 2.5em;
+    //     padding: 0.5em;
+    //     transition: height 400ms cubic-bezier(0.23, 1, 0.32, 1);
+    //   }
+    //   .NavBar_List > li {
+    //     display: flex;
+    //     justify-content: center;
+    //     margin: 0;
+    //     padding: 0.5em 0;
+    //     width: 100%;
+    //     color: white;
+    //     background-color: #222;
+    //   }
+    //   .NavBar_List > li:not(:last-child) {
+    //     border-bottom: 1px solid #444;
+    //   }
+
+
+
+
+      .LogInWindow {
+        @include LogInWindowMobileView;
+    }
     
 
     .ProductCards {
@@ -48,11 +109,32 @@
 
     }
     .ProductCards_productItem {
-        @include ProductCards_productItem;
+        @include ProductCards_productItemMobileView;
+    }
+
+    .ProductItem_ProductOrder {
+ 
+        display:inline-block;
+        position: relative;
+        margin-top: 2em;
+
     }
     
     .Footer_ListColumns{
         @include FooterMobileView()
+
     }   
 
-  }
+    .Footer_FollowOnSocials {
+        position: relative;
+        justify-self: center;
+    }
+    }
+
+
+
+
+
+
+
+

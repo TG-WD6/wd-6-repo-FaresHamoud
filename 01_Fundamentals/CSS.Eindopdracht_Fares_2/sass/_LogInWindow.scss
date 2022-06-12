@@ -9,14 +9,20 @@
     
 }
 
+.LogInSection {
+    display: flex;
+    flex-direction: column;
+
+}
+
 .LogInWindow {
     display: flex;
     flex-direction: column;
     align-items: center;
-    max-width: 400px;
     margin-top: 4em;
     margin-bottom: 2em;
-    margin-left: 30vw;
+    justify-self: center;
+
 
 }
 

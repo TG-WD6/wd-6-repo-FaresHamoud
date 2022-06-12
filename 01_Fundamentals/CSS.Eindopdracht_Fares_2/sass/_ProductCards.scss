@@ -34,8 +34,6 @@
 @mixin ProductCards_productItem {
     display: flex;
     flex: none;
-    min-height: 150px;
-    max-width: 95%;
     justify-content: space-between;
     align-items: left;
     
