@@ -23,5 +23,13 @@ console.log(somekittens.toUpperCase());
 ???
 
 
-console.log(somekittens.indexOf('kittens',));  
-console.log(somekittens.lastIndexOf('kittens',));  
+<!-- console.log(somekittens.indexOf('kittens',));  
+console.log(somekittens.lastIndexOf('kittens',));   -->
+
+
+4.
+console.log(somekittens.charAt(29));
+console.log(somekittens.charAt(35));
+
+k
+S
