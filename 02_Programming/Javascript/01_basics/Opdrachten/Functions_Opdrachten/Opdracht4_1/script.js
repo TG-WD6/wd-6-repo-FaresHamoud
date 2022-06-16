@@ -10,8 +10,8 @@ function helloOnClick() {
 
 <!-- 4.1.2-3- -->
 function processInput(){
-    let userInput = document.getElementById('inputField').value;
-    console.log(userInput * 2);
+    var userInput = document.getElementById('inputField');
+    console.log(userInput);
 
 }
 
