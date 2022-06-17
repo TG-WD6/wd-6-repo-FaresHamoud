@@ -3,7 +3,6 @@ function randomNumber() {
 }
 
 
-
 // function randomNumber(x) {
 //      var x = (3)
 //     console.log(Math.floor(Math.random() * x ))
