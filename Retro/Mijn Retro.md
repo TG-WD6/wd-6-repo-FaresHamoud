@@ -1,4 +1,4 @@
-# Retro Week \4
+# Retro  13-17
 
 ## Wat ging goed
 1. class mates helped me by looking at my code and noticing typos and bad practices at a glance
