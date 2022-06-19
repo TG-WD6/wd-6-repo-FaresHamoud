@@ -94,7 +94,9 @@ nav a {
   bottom: 2px;
 }
 
-@media (min-width: 768px, max-width: 1024px, orientation: landscape)
+@media (min-width: 768px), (max-width: 1024px), (orientation: landscape) { .page-title.main {display:flex} 
+
+}
 
 /* Opdracht 6
 De laatste breakpoint waar we rekening mee willen houden is een tablet in liggende stand (landscape). De Amazing Space website zou het formaat moeten veranderen om de gallery afbeeldingen aan de rechterkant weer te geven, terwijl het logo en de beschrijving aan de linkerkant staan. Schrijf een media query die aan de volgende vereisten voldoet:

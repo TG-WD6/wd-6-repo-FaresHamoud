@@ -1,0 +1,12 @@
+{
+    "version": 3,
+    "mappings": "ACGA,AAAA,OAAO,CAAC;EAUR,UAAU,ECVS,OAAkB;EDWrC,KAAK,EAAE,KAAK;EACZ,MAAM,EAAE,IAAI;EACZ,QAAQ,EAAE,QAAQ;CAAE;;AAbpB,AAGI,OAHG,AAGF,MAAM,CAAC;EACJ,UAAU,ECHO,OAAkB;EDInC,UAAU,EAAE,oBAAoB;CACnC;;AASL,AAAA,WAAW,CAAC;EACR,QAAQ,EAAE,QAAQ;EAClB,MAAM,EAAE,IAAI;EACZ,IAAI,EAAE,IAAI;CACb",
+    "sources": [
+        "../../scss/main.scss",
+        "../../scss/_button.scss",
+        "../../scss/_colors.scss",
+        "../../scss/_colors.scss"
+    ],
+    "names": [],
+    "file": "main.css"
+}

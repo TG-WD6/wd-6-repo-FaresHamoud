@@ -104,7 +104,7 @@ Ga nog eens terug naar de eerste media query waarin je je richtte op schermen me
 Voeg nog een mediafunctie toe aan de regel door een komma te gebruiken om regels te scheiden. De tweede mediafunctie moet controleren of de oriëntatie van het scherm daadwerkelijk ‘portrait’ is. */
 
 
-@media (min-width: 320px), (max-width: 480px) and (orientation: portrait) {
-  .page-description { display: inline;}
+@media (min-width: 320px) (max-width: 480px), (orientation: portrait) {
+  .page-description {flex-direction: column;}
 
 }
