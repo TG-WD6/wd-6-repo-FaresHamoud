@@ -8,14 +8,9 @@
     <title>Document</title>
   </head>
   <body>
-    <form action="">
+    <form id="userInputForm">
       <label for="name">Enter name here </label>
-      <input
-        type="text"
-        name="name"
-        id="nameInput"
-        maxlength="14"
-        onchange="nameInputLog()">
+      <input type="text"name="userInputField" id="userInputField"  onchange="checkUserInput()">
     </form>
 
     <input type="button" value="click here" id="btn" onclick="btnClick()">
