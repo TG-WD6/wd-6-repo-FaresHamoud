@@ -13,10 +13,14 @@ var randomIndex = fruitsoorten[Math.floor(Math.random() * fruitsoorten.length)];
 console.log(randomIndex)
 
 // 5.1.7
-const fruitsoorten2 = ['peer', 'Aardbei', 'banana', 'Peren', 'Kiwi'];
+fruitsoorten.splice(0, 1, 'peer');
+console.log(fruitsoorten);
 
 
 
+// Verwissel “Peer” en “Aardbei” van positie. Kan je dit ook al met/zonder Array method? 
 
 
+let verwisseld = fruitsoorten.splice(0, 1, 'aardbei', 'peer', 'banana', 'peren', 'kiwi')
+console.log(verwisseld);
 

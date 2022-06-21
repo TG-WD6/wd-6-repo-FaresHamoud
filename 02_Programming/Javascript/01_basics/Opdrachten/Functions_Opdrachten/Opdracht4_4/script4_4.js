@@ -14,6 +14,59 @@ function checkUserInput(userInput){
     }
 }
 
+// switch method 
+
+// function checkUserInput() {
+//     let userInput = document.getElementById("userInputField").value;
+//      switch (userInput) {
+//         case "joost":
+//         case "fares":
+//         case "lex":
+//         case "natahniel":
+//             console.log("sucess!")
+//             break;
+//             default: console.log("failed!");
+//      }
+
+        
+// } 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -25,9 +78,30 @@ function checkUserInput(userInput){
 
 // 4.4.3
 
-(userInput) => {
-    
-}
+// (userInput) => {
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
