@@ -14,6 +14,9 @@ function checkUserInput(userInput){
     }
 }
 
+
+
+
 // switch method 
 
 // function checkUserInput() {

@@ -54,4 +54,18 @@ const dutchSports = ["voetball", "Hockey", "Schaatsen"];
 
 // 5.3.7 Maak een nieuw array sportsLength, met daarin de lengte van elk item in het dutchSports array.
 
-// const sportsLenght = 
+
+let sportsLength = dutchSports.map((i) => {return i.length})
+
+
+
+// const sportsLength = (dutchSports.length);
+// console.log(sportsLength);
+
+
+// for (i=0; i<sportsLength; i++){
+//     console.log(sportsLength[i]);
+
+// }
+
+// use .map() here!!! 
