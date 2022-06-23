@@ -3,10 +3,13 @@
 
 const predefinedNames = ['joost', 'lex', 'nathaniel', 'fares']
 let userInput = document.getElementById('userInputField');
+userInput.onchange = (e) => {
+    checkUserInput(e.target)
+}
 
-function checkUserInput(userInput){
+function checkUserInput(input){
     // console.log('your input is ${userInput.value}')
-    if (predefinedNames.includes(userInput.value) === true){
+    if (predefinedNames.includes(input.value.toLowerCase()) === true){
         console.log('Bingo! one of us');
     }
     else {

@@ -57,6 +57,7 @@ const dutchSports = ["voetball", "Hockey", "Schaatsen"];
 
 let sportsLength = dutchSports.map((i) => {return i.length})
 
+console.log(sportsLength);
 
 
 // const sportsLength = (dutchSports.length);

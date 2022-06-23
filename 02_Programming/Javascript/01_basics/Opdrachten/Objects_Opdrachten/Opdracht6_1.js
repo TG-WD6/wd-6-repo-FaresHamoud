@@ -2,16 +2,16 @@
 
 
 
-// let pet = new Object();
+// let petdog = new Pet('naam', 'soort');
 // pet.naam = "max"
 // pet.soort= "hond"
 
-// let pet = new Object();
+// let petcat = new Pet('naam', 'soort');
 // pet.naam = "linda"
 // pet.soort= "kat"
 
 
-// let pet = new Object();
+// let petbird = new Pet('naam', 'soort');
 // pet.naam = "bert"
 // pet.soort= "vogel"
 
@@ -19,18 +19,36 @@
 
 
 
+
+
+
+
+// ...................................
+
+
+
+
+
+
+
 // object constructor 
 
+// function Pet(naam, soort){
+//     this.naam = naam;
+//     this.soort = soort;
+// }
+
+// const Pet1 = new Pet("Dave", "cavia");
+// console.log(Pet1);
 
 
-function Pet(naam, soort){
-    this.naam = naam;
-    this.soort = soort;
-}
 
 
-let pet1 = new Pet("dave", "cavia");
-console.log(pet1);
+
+
+
+
+// ...................................
 
 
 
@@ -40,29 +58,88 @@ console.log(pet1);
 
 
 // literal constructor
-let Pet1 = {
-    naam: "Dave",
-    soort: "cavia"
-};
+
+// function Pet(){
+//     this.naam = "Dave";
+//     this.soort = "cavia";
+// }
+
+
+// const Pet1 = new Pet();
+// console.log(Pet1);
 
 
 
+
+
+
+
+
+
+// ...................................
 
 
 
 // function constructor 
-function Pet1(naam, soort){
-    this.naam = Dave
-    this.soort = cavia
-}
+
+// function Pet(naam, soort){
+//     this.naam = naam
+//     this.soort = soort
+// }
+// let Pet1 = new Pet("dave", "cavia")
+// console.log(Pet1);
+
+
+
+
+
+
+
+// ...................................
+
+
+
+
+
 
 
 // singleton constructor
 
 
+// let Pet1 = new function(){
+//     this.naam = "Dave",
+//     this.soort = "cavia"
+// }
+// console.log(Pet1);
 
 
 
+
+
+
+
+
+
+
+// ...................................
 
 
 // class-based constructor 
+
+class petClass {
+    constructor(naam, soort) {
+        this.naam = naam
+        this.soort = soort 
+    // this.whatPet()   }
+    // whatPet(){
+    //     // console.log(`${this.name} dat is mijn pet`)
+    }
+}
+const MyPet = new petClass("Dave", "cavia")
+console.log(MyPet);
+
+
+
+
+
+

@@ -1,9 +1,9 @@
-let arrayLike = document.querySelectorAll("div")
-console.log(arrayLike)
+// let arrayLike = document.querySelectorAll("div")
+// console.log(arrayLike)
 
-// Gebruik Array.from() om er een nieuw array van te maken.
+// // Gebruik Array.from() om er een nieuw array van te maken.
 
-console.log(Array.from(arrayLike));
+// console.log(Array.from(arrayLike));
 
 
 
@@ -37,14 +37,21 @@ console.log(Array.from(arrayLike));
 
 // find() 
 
-const arrayToBeFound = ['ab', '434', 'cat', 'bob', '232']
+const arrayToBeFound = ['ab', '33', '434', 'cat', 'bob', '232', 'cat', '2', 1 , 22 , 3333, 22,]
 
 // const animal = arrayToBeFound.find(findcat);
 // console.log(animal);
 
 
+// ⚠️it is finding the first value only and cannot be used to search for a string 
 
-console.log(arrayToBeFound.find('cat'));
+// console.log(arrayToBeFound.find((x) => x > 10));
+
+// let findCat = arrayToBeFound.find((f) => f == 'cat')
+// console.log(findCat);
+
+
+
 
 
 
@@ -52,6 +59,61 @@ console.log(arrayToBeFound.find('cat'));
 
 // some() 
 
-// const arrayUsesSome = (element) => element === 'ab';
+// const checkUsingSome = (a) => a === 'bob';
+// const checkUsingSome2 = (a) => a === 'nann';
+// console.log(arrayToBeFound.some(checkUsingSome));
+// console.log(arrayToBeFound.some(checkUsingSome2))
 
-// console.log(arrayToBeFound.some(arrayUsesSome));
+
+
+
+
+
+
+
+
+
+
+
+// every()
+
+
+// const arrayOfNumbers = [2, 10, 343,  5, 27, 4]
+// function useEvery (n) {
+//     return n > 1;
+// }
+
+
+// console.log(arrayOfNumbers.every(useEvery));
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// includes()
+
+
+
+
+// const useIncludes = arrayToBeFound.includes('ab');
+
+// if(useIncludes){
+//     console.log("it is included")
+// }
+// else {
+//     console.log("it is not included ")}
