@@ -1,16 +1,16 @@
-# Retro Week 13-17
+# Retro 20_24 -6-2022
 
 ## Wat ging goed
-1. understanding java script's logic was simple at first, not as hard as excpected
+1. had help from calss mates to understand some concepts
 
-2. classmates helped explaining some hard concepts.
+2. asked the Tutor for help with an assignment i was stuck on
 
 
 ## Wat ging er minder goed
-1. started using an online java script playgorund, was not enough later when we had to connect js file to an html.
-2. got stuck on some assignments, sometimes the setup for the code was not right.
+1. spent a lot of time doing an assignment the wong way, later found out that i misunderstood it.
+2. moved on from some assignment without finishing which was aa bit problematic for future ones.
 
 
 ## Actiepunten voor volgende week
-* ask more for help, classmates or instructor
-* not to read ahead and worry about the upcoming subjects, and uderstanding the basic concepts better as they are the base for upcoming harder things to learn.
+* make sure to understand and fin9ish current objects
+* see examples done by class mates and choose a simple solution.

@@ -40,8 +40,6 @@ class Contactinformatie extends Club {
 
 
 
-
-
 // not using extends, recommended by classmates
 
 // class Club {
