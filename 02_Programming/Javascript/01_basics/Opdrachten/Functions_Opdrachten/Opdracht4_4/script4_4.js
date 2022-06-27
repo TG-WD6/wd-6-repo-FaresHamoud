@@ -11,31 +11,24 @@ function checkUserInput(input){
     // console.log('your input is ${userInput.value}')
     if (predefinedNames.includes(input.value.toLowerCase()) === true){
         console.log('Bingo! one of us');
+
     }
     else {
         console.log('Warning!! Intruder detected!!!');
     }
 }
 
+const result = checkUserInput(input)
+// document.createElement("div")
+// div.append(result);
+
+console.log(checkUserInput);
+
+document.getElementById("outPutField").innerHTML = Result ;
 
 
 
-// switch method 
 
-// function checkUserInput() {
-//     let userInput = document.getElementById("userInputField").value;
-//      switch (userInput) {
-//         case "joost":
-//         case "fares":
-//         case "lex":
-//         case "natahniel":
-//             console.log("sucess!")
-//             break;
-//             default: console.log("failed!");
-//      }
-
-        
-// } 
 
 
 
