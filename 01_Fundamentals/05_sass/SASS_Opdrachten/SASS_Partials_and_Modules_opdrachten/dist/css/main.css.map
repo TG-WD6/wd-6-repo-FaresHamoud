@@ -1,12 +1,1 @@
-{
-    "version": 3,
-    "mappings": "ACGA,AAAA,OAAO,CAAC;EAUR,UAAU,ECVS,OAAkB;EDWrC,KAAK,EAAE,KAAK;EACZ,MAAM,EAAE,IAAI;EACZ,QAAQ,EAAE,QAAQ;CAAE;;AAbpB,AAGI,OAHG,AAGF,MAAM,CAAC;EACJ,UAAU,ECHO,OAAkB;EDInC,UAAU,EAAE,oBAAoB;CACnC;;AASL,AAAA,WAAW,CAAC;EACR,QAAQ,EAAE,QAAQ;EAClB,MAAM,EAAE,IAAI;EACZ,IAAI,EAAE,IAAI;CACb",
-    "sources": [
-        "../../scss/main.scss",
-        "../../scss/_button.scss",
-        "../../scss/_colors.scss",
-        "../../scss/_colors.scss"
-    ],
-    "names": [],
-    "file": "main.css"
-}
+{"version":3,"sources":["../../scss/_button.scss","../../scss/_colors.scss","main.css"],"names":[],"mappings":"AAGA;EAUA,8BCVmB;EDWnB,YAAA;EACA,YAAA;EACA,kBAAA;AEXA;AFCI;EACI,8BCHiB;EDIjB,gCAAA;AECR;;AFSA;EACI,kBAAA;EACA,YAAA;EACA,UAAA;AENJ","file":"main.css"}

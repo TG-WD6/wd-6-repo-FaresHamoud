@@ -1,9 +1,1 @@
-{
-    "version": 3,
-    "mappings": "AAAA,OAAO,CAAC,qDAAI;AACZ,AAAA,EAAE,CAAC;EACC,WAAW,EAAE,kBAAkB;EAC/B,UAAU,EAAE,MAAM;CACrB;;AAED,AAAA,OAAO,CAAC;EACJ,WAAW,EAAE,mBAAmB;EAChC,MAAM,EAAE,KAAK;EACb,gBAAgB,EAAE,mBAAmB;CACxC;;AAED,AAAA,UAAU,CAAC;EACP,UAAU,EAAE,MAAM;EAClB,WAAW,EAAE,mBAAmB;CACnC",
-    "sources": [
-        "../../variables/main.scss"
-    ],
-    "names": [],
-    "file": "main.css"
-}
+{"version":3,"sources":["../../nesting/main.scss","main.css"],"names":[],"mappings":"AAAQ,6DAAA;AACR;EACI,+BAAA;EACA,kBAAA;ACCJ;;ADEA;EACI,gCAAA;EACA,aAAA;EACA,qCAAA;ACCJ;;ADEA;EACI,kBAAA;EACA,gCAAA;ACCJ","file":"main.css"}"}

@@ -1,19 +1,16 @@
 .button {
-  background: #86dcdb;
+  background: rgb(134, 220, 219);
   width: 100px;
   height: 30px;
   position: absolute;
 }
-
 .button:hover {
-  background: #ae6de7;
-  -webkit-box-shadow: 2px 2px 2px 2px grey;
-          box-shadow: 2px 2px 2px 2px grey;
+  background: rgb(174, 109, 231);
+  box-shadow: 2px 2px 2px 2px grey;
 }
 
 .buttontext {
   position: relative;
   bottom: 10px;
   left: 24px;
-}
-/*# sourceMappingURL=main.css.map */
+}/*# sourceMappingURL=main.css.map */
