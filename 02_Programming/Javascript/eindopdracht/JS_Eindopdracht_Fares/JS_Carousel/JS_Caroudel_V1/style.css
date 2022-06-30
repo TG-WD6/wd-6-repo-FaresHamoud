@@ -1,0 +1,91 @@
+*{margin: 0;
+padding: 0;
+}
+
+body {
+    font-family: 'Nunito', sans-serif;
+}
+
+
+h1 {
+    text-align: center;
+    font-size: 3rem;
+    margin: 2rem 0;
+    font-weight: 100;
+}
+
+img{
+    width: 100%;
+}
+
+
+
+/* to create a variable in css  */
+:root {
+
+    --primary-color: #fff;
+    --secondary-color: rgb(245, 50, 24);
+    --transition-speed: 0.5s;
+}
+
+
+
+.slides-container {
+    max-width: 700px;
+    position: relative;
+    margin: auto;
+    margin-bottom: 2rem;
+}
+
+
+.slide {
+    display: none;
+}
+
+
+.slide:first-child {
+    display: block;
+}
+
+
+.prev-btn,
+.next-btn {
+cursor: pointer;
+position: absolute;
+top: 50%;
+width: auto;
+margin-top: -2rem;
+padding: 1rem;
+color: var(--primary-color);
+border: none;
+outline: none;
+background-color: transparent;
+font-size: 1.2rem;
+border-radius: 0 3px 3px 0;
+transition: var(--transition-speed) ease-out;
+}
+
+
+
+.next-btn {
+    right: 0;
+    border-radius: 3px 0 3px 0;
+}
+
+.prev-btn:hover,.next-btn:hover{
+    background-color: black;
+}
+
+
+
+.prev-btn:active,
+.next-btn:active {
+color: var(--secondary-color);
+}
+
+
+
+
+.slide {
+    animation: slide var(--transition-speed) ease-out ;
+}
