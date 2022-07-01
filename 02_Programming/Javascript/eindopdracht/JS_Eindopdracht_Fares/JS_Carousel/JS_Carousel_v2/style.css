@@ -37,6 +37,7 @@ max-width: 800px;
 height: 350px;
 position: relative;
 overflow: hidden; 
+border-radius: 3%;
 }
 
 
@@ -46,6 +47,7 @@ max-width: 800px;
 height: 350px;
 position: absolute;
 transition: all 1s ease-in;
+
 }
 
 
