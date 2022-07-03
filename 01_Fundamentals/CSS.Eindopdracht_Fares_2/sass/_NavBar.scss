@@ -14,16 +14,15 @@
 }
 
 @mixin NavBar_Menu {
-  display: flex;
   padding: 1em;
   font-size: $NavBarTextSize;
   list-style-type: none;
   margin: 0;
   padding: 0;
-  overflow: hidden;
+  // overflow: hidden;
   li {
-    float: left;
     margin: 1em;
+    display:inline
   }
 }
 
