@@ -54,25 +54,45 @@
 
 
 
-fetch("./pokemon.json-master/items.json")
+
+// let http = new XMLHttpRequest();
+// http.open("get", "pokedex.json", true);
+// http.send();
+// http.onload = function(){
+//     if(this.readyState == 4 && this.status == 200){
+//         let pokedex = JSON.parse(this.responseText);
+//     }
+// }
+
+
+
+
+
+fetch("./pokemon.json-master/pokedex.json")
     .then(function (response) {
         return response.json();
     })
-// .then(function (data) {
-//     console.log(data);
-// })
+.then(function (data) {
+    console.log(data);
+})
+
+// to be populated with cards 
+const pokedexCardsContainer = document.querySelector(".pokedex-cards-container");
+
+
+// getting user's input 
+const userNumberInput = document.querySelector(".input-field").value;
+const userGenerationInput = function (){
+    let  value = document.querySelector(".generation-menu");
+    let getvalue = value.options[value.slectedIndex].value;
+    getvaluenumber = value.options[value.selectedIndex].number;
+    console.log( getvaluenumber) ;
+
+}
 
 
 
 
-// user's input values 
-const getValueInput = () => {
-    let inputNumberByUser = document.getElementsByClassName("input-field").value;
-    console.log(inputNumberByUser);}
 
-    const getSelectedGen = () => {
-        selectedGen = document.querySelector(".generation-menu");
-        output = selectedGen.value;
-        console.log(output);
 
-    }
+

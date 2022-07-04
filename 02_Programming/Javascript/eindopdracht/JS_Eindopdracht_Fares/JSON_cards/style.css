@@ -1,0 +1,25 @@
+.pokedex-cards-container {
+    display: flex;
+    flex-direction: row;
+    width: 90vw;
+    position: relative;
+   
+}
+
+.pokedex-card {
+    display: flex;
+    position: relative;
+    background: rgb(237, 238, 192);
+    width: 200px;
+    height: 200px;
+    border-radius: 4%;
+    flex: none;
+    flex-wrap: wrap;
+
+}
+
+
+pokemon-image.{
+    z-index: 11;
+
+}
