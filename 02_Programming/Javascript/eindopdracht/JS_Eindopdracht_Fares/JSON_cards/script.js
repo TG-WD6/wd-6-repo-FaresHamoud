@@ -68,31 +68,43 @@
 
 
 
+// fetch("./pokemon.json-master/pokedex.json")
+//     .then(function (response) {
+//         return response.json();
+//     })
+// .then(function (data) {
+//     console.log(data);
+// })
+
+// // to be populated with cards 
+// const pokedexCardsContainer = document.querySelector(".pokedex-cards-container");
+
+
+// // getting user's input 
+// const userNumberInput = document.querySelector(".input-field").value;
+// const userGenerationInput = document.querySelector(".generation-menu").value;
+
+
+
+
+// generatePokedex();{
+//     console.log(userGenerationInput);
+// }
+    
+
+
+
+
+
+// how to log in from json example, choose index of arrays?? 
+
 fetch("./pokemon.json-master/pokedex.json")
     .then(function (response) {
         return response.json();
     })
 .then(function (data) {
-    console.log(data);
+    for(i=0; i<data.length; i++){
+        console.log(data[i].id + data[i].name)
+
+    }
 })
-
-// to be populated with cards 
-const pokedexCardsContainer = document.querySelector(".pokedex-cards-container");
-
-
-// getting user's input 
-const userNumberInput = document.querySelector(".input-field").value;
-const userGenerationInput = function (){
-    let  value = document.querySelector(".generation-menu");
-    let getvalue = value.options[value.slectedIndex].value;
-    getvaluenumber = value.options[value.selectedIndex].number;
-    console.log( getvaluenumber) ;
-
-}
-
-
-
-
-
-
-
