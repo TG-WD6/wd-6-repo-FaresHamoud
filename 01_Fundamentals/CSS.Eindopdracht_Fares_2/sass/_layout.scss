@@ -34,7 +34,25 @@
   overflow: hidden;
 }
 
-@media only screen and (max-width: 750px) {
+
+.ProductCards {
+  @include ProductCardsMobileView;
+}
+.ProductCards_productItem {
+  @include ProductCards_productItemMobileView;
+}
+
+.ProductItem_ProductOrder {
+  display: inline-block;
+  position: relative;
+  margin-top: 2em;
+}
+
+.Footer_ListColumns {
+  @include FooterMobileView();
+}
+
+// @media only screen and (max-width: 750px) {
   // .menu-button-container {
   //     display: flex;
   //   }
@@ -78,22 +96,7 @@
   //     @include LogInWindowMobileView;
   //   }
 
-  .ProductCards {
-    @include ProductCardsMobileView;
-  }
-  .ProductCards_productItem {
-    @include ProductCards_productItemMobileView;
-  }
 
-  .ProductItem_ProductOrder {
-    display: inline-block;
-    position: relative;
-    margin-top: 2em;
-  }
-
-  .Footer_ListColumns {
-    @include FooterMobileView();
-  }
 
   //   .Footer_FollowOnSocials {
   //     position: relative;

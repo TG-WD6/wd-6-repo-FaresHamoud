@@ -1,1 +1,1 @@
-{"version":3,"sources":["../../nesting/main.scss","main.css"],"names":[],"mappings":"AAAQ,6DAAA;AACR;EACI,+BAAA;EACA,kBAAA;ACCJ;;ADEA;EACI,gCAAA;EACA,aAAA;EACA,qCAAA;ACCJ;;ADEA;EACI,kBAAA;EACA,gCAAA;ACCJ","file":"main.css"}"}
+{"version":3,"sourceRoot":"","sources":["../../variables/main.scss"],"names":[],"mappings":"AAAQ;AACR;EACI;EACA;;;AAGJ;EACI;EACA;EACA;;;AAGJ;EACI;EACA","file":"main.css"}

@@ -1,10 +1,12 @@
 @mixin NavBar {
-  padding: 1em;
-  width: 100vw;
-  height: 4em;
-  background: $NavigationBarcolor;
-  color: $WhiteTextColor;
-  position: absolute;
+  // padding: 1em;
+  // width: 100vw;
+  // height: 4em;
+  // background: $NavigationBarcolor;
+  // color: $WhiteTextColor;
+  // display: flex;
+  // align-items: center;
+  // justify-content: space-between;
 }
 
 @mixin NavBar_logo {
@@ -13,29 +15,44 @@
   margin-left: auto;
 }
 
-@mixin NavBar_Menu {
-  padding: 1em;
-  font-size: $NavBarTextSize;
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
+@mixin NavBar_menu {
+  // padding: 1em;
+  // font-size: $NavBarTextSize;
+  // list-style-type: none;
+  // margin: 0;
+  // padding: 0;
   // overflow: hidden;
-  li {
-    margin: 1em;
-    display:inline
-  }
 }
 
 .NavBar {
-  @include NavBar;
+  padding: 1em;
+  width: 100vw;
+  height: 4em;
+  background: $NavigationBarcolor;
+  color: $WhiteTextColor;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .NavBar_logo {
   @include NavBar_logo;
 }
 
-.NavBar_Menu {
-  @include NavBar_Menu;
+.NavBar_menu {
+  padding: 1em;
+  font-size: $NavBarTextSize;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+
+}
+
+.NavBar_menu li {
+  margin: 1em;
+  text-decoration: none;
+  display: inline-block;
 }
 
 // .menu-button,
