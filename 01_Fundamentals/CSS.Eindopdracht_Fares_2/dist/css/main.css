@@ -68,7 +68,9 @@
 }
 
 .NavBar_List li {
-  float: left;
+
+  text-decoration: none;
+  display: inline-block;
   margin: 1em;
 }
 

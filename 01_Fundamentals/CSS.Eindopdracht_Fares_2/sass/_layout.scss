@@ -34,7 +34,6 @@
   overflow: hidden;
 }
 
-
 .ProductCards {
   @include ProductCardsMobileView;
 }
@@ -52,54 +51,54 @@
   @include FooterMobileView();
 }
 
-// @media only screen and (max-width: 750px) {
-  // .menu-button-container {
-  //     display: flex;
-  //   }
-  //   .NavBar_List {
-  //     position: absolute;
-  //     top: 0;
-  //     margin-top: 50px;
-  //     left: 0;
-  //     flex-direction: column;
-  //     width: 100%;
-  //     justify-content: center;
-  //     align-items: center;
-  //   }
-  //   #menu-toggle ~ .NavBar_List li {
-  //     height: 0;
-  //     margin: 0;
-  //     padding: 0;
-  //     border: 0;
-  //     transition: height 400ms cubic-bezier(0.23, 1, 0.32, 1);
-  //   }
-  //   #menu-toggle:checked ~ .NavBar_List li {
-  //     border: 1px solid #333;
-  //     height: 2.5em;
-  //     padding: 0.5em;
-  //     transition: height 400ms cubic-bezier(0.23, 1, 0.32, 1);
-  //   }
-  //   .NavBar_List > li {
-  //     display: flex;
-  //     justify-content: center;
-  //     margin: 0;
-  //     padding: 0.5em 0;
-  //     width: 100%;
-  //     color: white;
-  //     background-color: #222;
-  //   }
-  //   .NavBar_List > li:not(:last-child) {
-  //     border-bottom: 1px solid #444;
-  //   }
+@media only screen and (max-width: 750px) {
+  .menu-button-container {
+    display: flex;
+  }
+  .NavBar_List {
+    position: absolute;
+    top: 0;
+    margin-top: 50px;
+    left: 0;
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+  }
+  #menu-toggle ~ .NavBar_List li {
+    height: 0;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    transition: height 400ms cubic-bezier(0.23, 1, 0.32, 1);
+  }
+  #menu-toggle:checked ~ .NavBar_List li {
+    border: 1px solid #333;
+    height: 2.5em;
+    padding: 0.5em;
+    transition: height 400ms cubic-bezier(0.23, 1, 0.32, 1);
+  }
+  .NavBar_List > li {
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0.5em 0;
+    width: 100%;
+    color: white;
+    background-color: #222;
+    float: left;
+  }
+  .NavBar_List > li:not(:last-child) {
+    border-bottom: 1px solid #444;
+  }
 
-  //   .LogInWindow {
-  //     @include LogInWindowMobileView;
-  //   }
+  .LogInWindow {
+    @include LogInWindowMobileView;
+  }
 
-
-
-  //   .Footer_FollowOnSocials {
-  //     position: relative;
-  //     justify-self: center;
-  //   }
+  .Footer_FollowOnSocials {
+    position: relative;
+    justify-self: center;
+    margin-left: auto;
+  }
 }
