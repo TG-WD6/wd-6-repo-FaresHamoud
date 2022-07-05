@@ -1,6 +1,6 @@
 @import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css);
-@import "NavBar", "base", "Hamburger", "LogInWindow", "ProductCards", "footer",
-  "layout";
+@import "_NavBar", "_base", "_Hamburger", "_LogInWindow", "_ProductCards",
+  "_footer", "_layout";
 
 .PageMainFrame {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
