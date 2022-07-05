@@ -66,12 +66,41 @@
 
 
 
+// const importPokemonData = async () => {
+//     const result = fetch("./pokemon.json-master/pokedex.json")
+//     const returnValue = result.then(response => response.json())
+//     return await returnValue;
+// }
 
 
-// fetch("./pokemon.json-master/pokedex.json")
-//     .then(function (response) {
-//         return response.json();
-//     })
+// const pokemondata = await importPokemonData()
+// console.log(pokemondata)
+
+
+
+
+
+
+fetch("./pokemon.json-master/pokedex.json")
+    .then(function (response) {
+        return response.json();
+    })
+
+    .then(function (pokemonDataImport) {
+        console.log(pokemonDataImport);
+    })
+
+
+
+
+    // .catch(() =>{
+    //     console.log(pokemonData);
+    // })
+
+
+    // function logIn (pokemonData.id){
+
+    // }
 // .then(function (data) {
 //     console.log(data);
 // })
@@ -86,25 +115,15 @@
 
 
 
+function generatePokedex(){
+let userNumberInput = document.querySelector(".input-field").value;
+const userGenerationInput = document.querySelector(".generation-menu").value;
+console.log(userNumberInput, userGenerationInput);
+let pokemondData = pokemonDataImport();
+console.log(pokemondData);
 
-// generatePokedex();{
-//     console.log(userGenerationInput);
-// }
+
+}
     
 
 
-
-
-
-// how to log in from json example, choose index of arrays?? 
-
-fetch("./pokemon.json-master/pokedex.json")
-    .then(function (response) {
-        return response.json();
-    })
-.then(function (data) {
-    for(i=0; i<data.length; i++){
-        console.log(data[i].id + data[i].name)
-
-    }
-})

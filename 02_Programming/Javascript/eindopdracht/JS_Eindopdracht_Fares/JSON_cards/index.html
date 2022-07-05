@@ -14,10 +14,10 @@
     
 
 
-<button class="clear-btn">clear</button>
+<button type="reset" class="clear-btn">clear</button>
 
-<input class= "input-field" type="number" oninput="getValueInput()">
-
+<input class= "input-field" type="number" >
+<!-- oninput="getValueInput()" -->
 
 <form action="#">
     <label for="generation">choose Gen</label>
@@ -31,14 +31,14 @@
       <option value="7">generation 7</option>
 
     </select>
-    <input type="submit" value="generate Pokedex" class="generate-btn" onclick="generatePokedex()">
+    <input type="submit" value="generate Pokedex" class="generate-btn" onclick="generatePokedex();">
 </form>
 
 <div class="pokedex-cards-container">
 <div class="pokedex-card">
 
   <img class="pokemon-image" src="" alt="pokemon"
-  onmouseover="hideImage(this)"  >
+  onmouseover="hideImage(this)">
 
 
 </div>
