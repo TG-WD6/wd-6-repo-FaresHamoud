@@ -18,7 +18,23 @@
 
 
             <div class="comment">
-<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Soluta labore officiis quo sequi adipisci sapiente voluptatum dolorem, facere natus iure magnam at praesentium odio vitae repudiandae iusto maiores minus aliquid!</p>
+
+                <div class="comment-id">
+                    <img src="" alt="user's image">
+                    <p class="user-id"></p>
+                    <p class="comment-number"></p>
+                </div>
+                <div class="comment-text"><p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p></div>
+                <button onclick=replyFunction() class="reply-button">reply</button>
+
+            </div>
+
+            <div class="comment">
+
+                <div class="comment-image"></div>
+                <div class="comment-text"><p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p></div>
+                <button onclick=referToComment() class="reply-button">reply</button>
+
             </div>
 
 
@@ -29,7 +45,14 @@
 
 
 
+<div class="comment-field">
+<input class="text-field" type="text">
+<form >
+    <input class="user-name" type="text">
+    <button class="submit-button" onclick=replyFunction()>submit</button>
+</form>
 
+</div>
 
 
 
