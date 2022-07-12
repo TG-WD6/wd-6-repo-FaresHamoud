@@ -1,0 +1,23 @@
+.container {
+    box-sizing: border-box;
+    width: min(90vw);
+}
+
+
+
+.comment-container {
+    position: relative;
+    background-color: rgb(173, 211, 134);
+    width: 100vh;
+    height: 100vh;
+}
+
+
+
+.comment::before{
+    content: "";
+    background-color: white;
+    position: relative;
+    min-height: 100%;
+
+}

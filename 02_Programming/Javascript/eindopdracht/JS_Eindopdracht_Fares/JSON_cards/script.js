@@ -92,6 +92,11 @@ fetch("./pokemon.json-master/pokedex.json")
 
 
 
+    // function impoertedData(){
+    //     let mydata = pokemonDataImport();
+    //     console.log(mydata)
+    // }
+
 
     // .catch(() =>{
     //     console.log(pokemonData);
@@ -113,12 +118,63 @@ fetch("./pokemon.json-master/pokedex.json")
 // const userNumberInput = document.querySelector(".input-field").value;
 // const userGenerationInput = document.querySelector(".generation-menu").value;
 
+// function pokemoneGeneration() {
+// if (userGenerationInput.value <= 151){
+//     pokemonGenerationSelect = 1;
+// }else if(userGenerationInput.value > 151 && userGenerationInput.value < 251){
+//     pokemonGenerationSelect = 2;
+// }else if (userGenerationInput.value >251 && userGenerationInput < 386){
+//     pokemonGenerationSelect = 3;
+// }else if (userGenerationInput.value >386 && userGenerationInput < 493){
+//     pokemonGenerationSelect = 4;
+// }else if (userGenerationInput.value >493 && userGenerationInput < 649){
+//     pokemonGenerationSelect = 5;
+// }else if (userGenerationInput.value >649 && userGenerationInput < 271){
+//     pokemonGenerationSelect = 6;
+// }
+// }
+
+const userGenerationInput = document.querySelector(".generation-menu").value;
+
+function pokemoneGeneration() {
+    if (userGenerationInput.value = 1){
+        pokemonGenerationSelect = 1 || pokemonGenerationSelect < 151;
+    }
+
+    else if(userGenerationInput.value = 2){
+        pokemonGenerationSelect = 151 || pokemonGenerationSelect < 251;
+    }
+    else if(userGenerationInput.value = 3){
+        pokemonGenerationSelect = 251 || pokemonGenerationSelect < 386;
+    }
+    else if(userGenerationInput.value = 4){
+        pokemonGenerationSelect = 493 || pokemonGenerationSelect < 493;
+    }
+    else if(userGenerationInput.value = 5){
+        pokemonGenerationSelect = 151 || pokemonGenerationSelect < 649;
+    }
+    else if(userGenerationInput.value = 6){
+        pokemonGenerationSelect = 649 || pokemonGenerationSelect > 649;
+    }
+}
+
+
+
+
+
+
+let pickPokemon = pokemonDataImport.map(([$userNumberInput]) =>{
+
+})
+
+
 
 
 function generatePokedex(){
 let userNumberInput = document.querySelector(".input-field").value;
 const userGenerationInput = document.querySelector(".generation-menu").value;
 console.log(userNumberInput, userGenerationInput);
+
 let pokemondData = pokemonDataImport();
 console.log(pokemondData);
 
