@@ -1,0 +1,70 @@
+
+@mixin BlankImageLogIn {
+    background: rgb(185, 184, 184);
+    width: 150px;
+    height: 150px;
+    border-radius: 10%;
+    position: relative;
+    display: inline-block;
+    
+}
+
+.LogInSection {
+    display: flex;
+    flex-direction: column;
+
+}
+
+.LogInWindow {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 4em;
+    margin-bottom: 2em;
+    justify-self: center;
+
+
+}
+
+.LogInWindow_BlankImageAndCaption {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.LogInWindow_BlankImage {
+    @include BlankImageLogIn;
+}
+
+
+.LogInWindow_Forms form {
+margin-top: 3em;
+}
+
+.Forms {
+    border-top: 0;
+    border-left: 0;
+    border-right: 0;
+}
+
+.RememberMe {
+    font-size: 60%;
+}
+
+.ForgotPassword {
+
+    font-size: 50%;
+
+}
+
+
+
+
+
+.LogInButton {
+    width: 12em;
+    background: $ButtonColor;
+    border-style: none;
+    color: $WhiteTextColor;
+    padding: 1em;
+}

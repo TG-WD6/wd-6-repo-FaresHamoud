@@ -1,0 +1,127 @@
+@mixin ProductCards  {
+    width: 90vw;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+
+    
+}
+
+
+
+@mixin BlankImageProduct {
+    background: rgb(185, 184, 184);
+    width: 150px;
+    height: 150px;
+    border-radius: 10%;
+    position: relative;
+    display: inline-block;
+    flex: none;
+    margin: 1em;
+    
+}
+
+
+@mixin ProductOrder_AddToCartButton {
+    background: rgb(246, 246, 38);
+    width: 3em;
+    height: 1.5em;
+    border-style: none;
+    padding-right: 0.6em;
+
+}
+
+@mixin ProductCards_productItem {
+    display: flex;
+    flex: none;
+    justify-content: space-between;
+    align-items: left;
+    
+}
+
+@mixin ProductItem_ProductDescription {
+    display: inline-block;
+    max-width: 60%;
+
+    
+}
+
+.ProductCards {
+@include ProductCards;
+}
+
+
+
+
+
+.ProductCards_productItem {
+@include ProductCards_productItem;
+
+}
+
+.ProductItem_ProductDescription {
+    @include ProductItem_ProductDescription;
+
+
+
+
+}
+
+
+
+.ProductItem_ProductImage {
+
+@include BlankImageProduct;
+}
+
+
+
+.ProductItem_ProductDescription {
+    .ProductDescription_TechgroundsTitel {
+        font-weight: bold;
+    }
+    .ProductDescription_Lorumipsum {
+        color: $GreyTextColor;
+    }
+}
+
+
+.ProductItem_ProductOrder {
+    min-width: 16em;
+    display:block;
+    position: relative;
+    margin-top: 2em;
+
+    
+
+}
+
+.ProductOrder_price {
+    color: $PriceTextColor;
+    position: relative;
+    display: block;
+
+  
+}
+
+.cents {
+    font-size: 76%;
+    position: relative;
+    top: -5px;
+    right: 2px
+}
+
+
+
+
+
+
+.ProductOrder_DeliveryTime {
+
+    color: $OrderTextColor;
+}
+
+.ProductOrder_AddToCartButton {
+    @include ProductOrder_AddToCartButton;
+
+}
