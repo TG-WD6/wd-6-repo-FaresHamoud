@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+
+<!-- 
+    Styling die je toepast wordt toegepast in een bepaalde volgorde. Het kan voorkomen dat je styling toepast en vervolgens niet het gewenste resultaat ziet. Cascade en Inheritance zijn belangrijke concepten om te begrijpen hoe styling werkt. Lees hier in de officiële documentatie meer over cascade en inheritance.
+
+    Zoek ook andere referenties om het concept te begrijpen.
+    
+    Leg in eigen woorden uit wat met cascade en inheritance wordt bedoeld. Maak voorbeelden om je antwoord uit te leggen. -->
+
+
+
+<style>
+
+
+/* this is a general selector, low on specifity */
+p {
+    color: blue;
+}
+
+
+
+/* this selector is more specified, more so than the type selector */
+.aDiv {
+color: rgb(85, 114, 139);
+}
+
+
+/* the elements nested inside a div for example, will inherit its style */
+a.Div {
+    text-decoration: dotted;
+}
+
+
+/* if there is multiple rules for one element, the priority will be for the last one used, and spicifity also has a higher priority than general selectors */
+
+/* Styles for a directly targeted element will always take precedence over inherited styles, regardless of the specificity of the inherited rule.  */
+
+
+
+</style>
+
+
+
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+
+
+
+    <div class="aDiv">
+        <p>div 1</p>
+        <p id="p1">this is a P </p>
+        <p>this is a P </p>
+        <p>this is a P </p>
+        <p>this is a P </p>
+        <h1>this is a h1</h1>
+        
+        <ol>
+            <li>this is a li</li>
+            <li id="li2">this is a li</li>
+            <li>this is a li</li>
+        </ol>
+         </div>
+    
+    
+    
+    
+    
+         <div class="aDiv">
+    <p>div 2</p>
+    <p>this is a p</p>
+    
+    <section>
+        <p>this is a p nested in section</p>
+        <ul>
+            <li>this is a li</li>
+            <li>this is a li</li>
+            <li>this is a li</li>
+            <li>this is a li</li>
+
+        </ul>
+    </section>
+
+
+    <h2>this is an h2</h2>
+    <p>this is a p</p>
+    <p>this is a p2</p>
+
+
+
+
+
+
+
+
+</body>
+</html>

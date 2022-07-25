@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+
+    <!-- Opdracht 6
+    Verder heb je ook nog de volgende selectors:
+    
+    universal selector
+    attribute selectors
+    child selectors
+    adjacent sibling selectors
+    general sibling selectors
+    Maak een .html file waar je alledrie in gebruikt -->
+
+
+
+<style>
+
+
+
+
+/* universal selector */
+
+* {color: darkslategrey;}
+
+
+/* attribute selector */
+a {
+    font-size: x-large;
+}
+
+
+
+/* child selectors */
+section > p {
+
+    color: crimson;
+
+}
+
+
+/* adjacent sibling selectors */
+h2 + p {
+    text-decoration: double; color: blue;
+}
+
+
+/* general sibling selectors */
+
+div ~ p {
+    color: aqua;
+}
+
+
+
+
+
+
+
+</style>
+
+
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+
+    <div class="aDiv">
+        <p>div 1</p>
+        <p id="p1">this is a P </p>
+        <p>this is a P </p>
+        <p>this is a P </p>
+        <p>this is a P </p>
+        <h1>this is a h1</h1>
+        
+        <ol>
+            <li>this is a li</li>
+            <li id="li2">this is a li</li>
+            <li>this is a li</li>
+        </ol>
+         </div>
+    
+    
+    
+    
+    
+         <div class="aDiv">
+    <p>div 2</p>
+    <p>this is a p</p>
+    
+    <section>
+        <p>this is a p nested in section</p>
+        <ul>
+            <li>this is a li</li>
+            <li>this is a li</li>
+            <li>this is a li</li>
+            <li>this is a li</li>
+
+        </ul>
+    </section>
+
+
+    <h2>this is an h2</h2>
+    <p>this is a p</p>
+    <p>this is a p2</p>
+
+
+    <a href="https://github.com/FaresHamoud?tab=repositories" target="_blank">Click to see my Repository on Git</a>
+
+
+</body>
+</html>

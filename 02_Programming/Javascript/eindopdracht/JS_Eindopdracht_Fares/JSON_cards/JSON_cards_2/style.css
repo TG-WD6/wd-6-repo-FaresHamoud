@@ -1,0 +1,52 @@
+.pokedex-cards-container {
+    display: flex;
+    flex-direction: row;
+    width: 90vw;
+    position: absolute;
+   
+}
+
+.pokedex-card {
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+    background: rgb(237, 238, 192);
+    width: 300px;
+    height: 300px;
+    border-radius: 4%;
+
+}
+
+
+.pokemon-image{
+    z-index: 11;
+
+}
+
+
+.pokemon-sprite {
+    display: block;
+    position: relative;
+    height: 30%;
+
+}
+
+.pokemon-type {
+    background-color: coral;
+    border-radius: 10%;
+    position: relative;
+max-height: 20px; 
+}
+
+ul {
+    list-style: none;
+}
+
+
+.pokemon-stats-container {
+    position: relative;
+    display: inline;
+    max-width: 90%;
+    display: flex;
+    flex-direction: row;
+}

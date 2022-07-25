@@ -1,0 +1,41 @@
+.container {
+    box-sizing: border-box;
+    width: min(90vw);
+    height: max(70vh);
+    position: absolute;
+    background-color: rgb(173, 211, 134);
+}
+
+
+
+.comment-container {
+    display: flexbox;
+    position: relative;
+    width: 90%;
+    height: 100vh;
+}
+
+
+
+.comment{
+
+    background-color: white;
+    position: relative;
+    min-height: auto;
+    margin: 1rem;
+    border-radius: 6%;
+    font-size: small;
+
+}
+
+.comment-image {
+    background-color: rgb(182, 228, 182);
+    position: relative;
+    max-width: 19%;
+    max-height: 100%;
+}
+
+.reply-button {
+    position: relative;
+
+}
