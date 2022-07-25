@@ -18,43 +18,37 @@ fetch(source)
 
 
 function fetchPokemon(data) {
-    console.log(data[0].type);
+    // console.log(data[16].type);
+const displayPokedex = (data) => {
+    console.log(data);
 }
 
-// for(let pokemon of fetchPokemon){
-//     output += `
-//        <div class="pokedex-cards-container">
-//         //   <img src="${./02_Programming\Javascript\eindopdracht\JS_Eindopdracht_Fares\JSON_cards\JSON_cards_2\pokemon.json-master}">
-//           <p class="title">${item.title}</p>
-//           <p class="pokemon-name">${fetchPokemon.name}</p>
-//           </p>
-//        </div>
-//     `;
-//  }
-
-let userGenerationInput = document.querySelector(".generation-menu").value;
-
-let pokemonGenerationSelect = function () {
-    if (userGenerationInput.value = 1) {
-        pokemonGenerationSelect = 1 || pokemonGenerationSelect < 151;
-    }
-
-    else if (userGenerationInput.value = 2) {
-        pokemonGenerationSelect = 151 || pokemonGenerationSelect < 251;
-    }
-    else if (userGenerationInput.value = 3) {
-        pokemonGenerationSelect = 251 || pokemonGenerationSelect < 386;
-    }
-    else if (userGenerationInput.value = 4) {
-        pokemonGenerationSelect = 493 || pokemonGenerationSelect < 493;
-    }
-    else if (userGenerationInput.value = 5) {
-        pokemonGenerationSelect = 151 || pokemonGenerationSelect < 649;
-    }
-    else if (userGenerationInput.value = 6) {
-        pokemonGenerationSelect = 649 || pokemonGenerationSelect > 649;
-    }
 }
 
-console.log(pokemonGenerationSelect);
+
+
+// let userGenerationInput = document.querySelector(".generation-menu").value;
+
+// let pokemonGenerationSelectRange = function () {
+//     if (userGenerationInput.value = 1) {
+//         pokemonGenerationSelect = 1 || pokemonGenerationSelect < 151;
+//     }
+
+//     else if (userGenerationInput.value = 2) {
+//         pokemonGenerationSelect = 151 || pokemonGenerationSelect < 251;
+//     }
+//     else if (userGenerationInput.value = 3) {
+//         pokemonGenerationSelect = 251 || pokemonGenerationSelect < 386;
+//     }
+//     else if (userGenerationInput.value = 4) {
+//         pokemonGenerationSelect = 493 || pokemonGenerationSelect < 493;
+//     }
+//     else if (userGenerationInput.value = 5) {
+//         pokemonGenerationSelect = 151 || pokemonGenerationSelect < 649;
+//     }
+//     else if (userGenerationInput.value = 6) {
+//         pokemonGenerationSelect = 649 || pokemonGenerationSelect > 649;
+//     }
+// }
+
 
