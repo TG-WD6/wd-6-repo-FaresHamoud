@@ -17,24 +17,24 @@ const Classmates = [
 
 
 
-const list = document.getElementsByClassName("list");
-const searchInput = document.getElementById("searchBar");
+const list = document.getElementById("search-list")
+const searchInput = document.getElementById("search-bar");
 
 
-function showList(group) {
-    clearList();
-    for (const searchTerm of Classmates) {
-        const item = document.createElement('li');
-        item.classList.add('list-group-item');
-        const text = document.createTextNode(searchTerm.name);
-        item.appendChild(text)
-            ;
-        list.appendChild(item);
-    }
-    if (group.lenght === 0) {
-        noResult();
-    }
-}
+// function showList(group) {
+//     clearList();
+//     for (const searchTerm of Classmates) {
+//         const item = document.createElement('li');
+//         item.classList.add('list-group-item');
+//         const text = document.createTextNode(searchTerm.name);
+//         item.appendChild(text)
+//             ;
+//         list.appendChild(item);
+//     }
+//     if (group.lenght === 0) {
+//         noResult();
+//     }
+// }
 
 
 // function relevant (value, searchInput){
@@ -52,9 +52,22 @@ function showList(group) {
 
 
 
+// localStorage.clear
+
+// searchInput.addEventListener('input', (e) => {
+//     for (let i = 0; i< list.Classmates.length; i++){
+// list.Classmates[i].list.remove('show', 'active');
+//     }
+
+// })
 
 
-searchInput.addEventListener('input', () => {
-    const value = event.target.value;
+// if (localStorage.length > 0){
+//     let storageArray = localStorage.getItem('storageArray');
+//     let parsedStrings = Classmates.parse(storageArray);
 
-})
+// for (let i = 0; i <parsedStrings.langht; i++){
+//     if ()
+// }
+
+// }
